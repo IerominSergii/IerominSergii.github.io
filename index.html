@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Sergey Yeromin | Web Design & Web Development</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script src="js/picturefill.js" async></script>
+    <script src="js/svg4everybody.js"></script>
+    <!-- <script>svg4everybody();</script> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <svg style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </svg>
+    <header class="header" id="home">
+      <div class="header__wrapper">
+        <!-- id="menu" is for smooth transition by the page -->
+        <nav class="header__nav" id="menu">
+          <div class="header__logo">
+            <span class="header__logo-name">Sergey Yeromin</span>
+            <span class="header__technologies">Web Design & Development</span>
+          </div>
+          <div class="header__toggle">Menu</div>
+          <ul class="header__menu">
+            <li class="header__menu-item header__projects">
+              <a class="header__menu-link" href="#projects">Projects</a>
+            </li>
+            <li class="header__menu-item header__contacts">
+              <a class="header__menu-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-index">
+      <header class="page-index__header inner-header">
+        <div class="inner-header__wrapper">
+          <h1 class="inner-header__title">Front-end Web Developer</h1>
+          <div class="inner-header__text">
+            <p class="inner-header__inner-text">I design & build user interfaces, landing pages, corporate websites and web applications.</p>
+          </div>
+          <ul class="inner-header__order-menu">
+            <li class="inner-header__order-item inner-header__website">
+              <a class="inner-header__order-link" href="#contacts">
+                I need a website
+                <span class="inner-header__icon-shevron"></span>
+              </a>
+            </li>
+            <li class="inner-header__order-item inner-header__hire">
+              <a class="inner-header__order-link" href="#contacts">
+                I'm looking to hire
+                <span class="inner-header__icon-shevron"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="page-index__projects projects" id="projects">
+        <div class="projects__wrapper">
+          <h2 class="projects__title visually-hidden">Projects</h2>
+          <article class="projects__project project">
+            <a class="project__image-link">
+              <picture class="project__picture">
+                <source srcset="img/responsive-showcase-presentation__Mishka.jpg" media="(min-width: 1150px)">
+                <source srcset="img/responsive-showcase-presentation__Mishka.jpg" media="(min-width: 768px)">
+                <img class="project__image" src="img/responsive-showcase-presentation__Mishka.jpg" alt="project">
+              </picture>
+            </a>
+            <div class="project__info">
+              <h3 class="project__title">Mishka</h3>
+              <p class="project__description">Mishka is a small store of handmade well-crafted goods.</p>
+              <div class="project__technologies">
+                <div class="project__item project__type">Website</div>
+                <div class="project__item project__technology">html&css</div>
+                <div class="project__item project__technology">JavaScript</div>
+                <div class="project__item project__technology">Responsive design</div>
+              </div>
+            </div>
+          </article>
+          <article class="projects__project project">
+            <a class="project__image-link">
+              <picture class="project__picture">
+                <source srcset="img/kekstagram.png" media="(min-width: 1150px)">
+                <source srcset="img/kekstagram.png" media="(min-width: 768px)">
+                <img class="project__image" src="img/kekstagram.png" alt="kekstagram">
+              </picture>
+            </a>
+            <div class="project__info">
+              <h3 class="project__title">Kekstagram</h3>
+              <p class="project__description">Photo-sharing application and service that allows users to share pictures</p>
+              <div class="project__technologies">
+                <div class="project__item project__type">JavaScript</div>
+                <div class="project__item project__technology">AJAX</div>
+                <div class="project__item project__technology">JSON</div>
+                <div class="project__item project__technology">XMLHttpRequest</div>
+              </div>
+            </div>
+          </article>
+          <article class="projects__project project">
+            <a class="project__image-link">
+              <picture class="project__picture">
+                <source srcset="img/gllasy.png" media="(min-width: 1150px)">
+                <source srcset="img/gllasy.png" media="(min-width: 768px)">
+                <img class="project__image" src="img/gllasy.png" alt="gllasy">
+              </picture>
+            </a>
+            <div class="project__info">
+              <h3 class="project__title">Gllasy</h3>
+              <p class="project__description">Just web-site of Ice-cream shop</p>
+              <div class="project__technologies">
+                <div class="project__item project__type">Website</div>
+                <div class="project__item project__technology">html&css</div>
+                <div class="project__item project__technology">JavaScript</div>
+              </div>
+            </div>
+          </article>
+          <article class="projects__project project">
+            <a class="project__image-link">
+              <picture class="project__picture">
+                <source srcset="img/nerds.png" media="(min-width: 1150px)">
+                <source srcset="img/nerds.png" media="(min-width: 768px)">
+                <img class="project__image" src="img/nerds.png" alt="gllasy">
+              </picture>
+            </a>
+            <div class="project__info">
+              <h3 class="project__title">Nerds</h3>
+              <p class="project__description">Photo-sharing application and service that allows users to share pictures</p>
+              <div class="project__technologies">
+                <div class="project__item project__type">Website</div>
+                <div class="project__item project__technology">html&css</div>
+                <div class="project__item project__technology">JavaScript</div>
+              </div>
+            </div>
+          </article>
+          <article class="projects__project project">
+            <a class="project__image-link">
+              <picture class="project__picture">
+                <source srcset="img/barbershop.png" media="(min-width: 1150px)">
+                <source srcset="img/barbershop.png" media="(min-width: 768px)">
+                <img class="project__image" src="img/barbershop.png" alt="gllasy">
+              </picture>
+            </a>
+            <div class="project__info">
+              <h3 class="project__title">Barbershop</h3>
+              <p class="project__description">Photo-sharing application and service that allows users to share pictures</p>
+              <div class="project__technologies">
+                <div class="project__item project__type">Website</div>
+                <div class="project__item project__technology">html&css</div>
+                <div class="project__item project__technology">JavaScript</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__map map">
+        <h2 class="map__title visually-hidden">Projects</h2>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.130259948444!2d24.017679184409822!3d49.78361530114731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7d4a272a889%3A0x91c11c1720da375e!2z0JHQsNCz0LDRgtC-0LrQstCw0YDRgtC40YDQvdC40Lkg0LHRg9C00LjQvdC-0LosINCy0YPQu9C40YbRjyDQmtCw0YDQu9CwINCc0ZbQutC70YzQvtGI0LAsIDE1LCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1509386748979" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+      <section class="footer__contacts" id="contacts" name="contacts">
+        <div class="footer__contacts-wrapper">
+          <div class="contacts">
+            <img class="contacts__user-photo" src="img/ava.jpg" width ="130" alt="user-photo">
+            <!-- <picture class="contacts__user-photo">
+            </picture> -->
+            <div class="contacts__phone">
+              <a class="contacts__phone-link" href="tel:0636590054">+38 (063) 659-0054</a>
+            </div>
+            <ul class="contacts__social social">
+              <li class="social__item social__git">
+                <a class="social__link" href="https://github.com/IerominSergii" target="_blank">
+                  <span class="visually-hidden">git link</span>
+                  <svg class="social__icon social__icon-github" width="29" height="29">
+                    <use xlink:href="#icon-github"></use>
+                  </svg>
+                  git
+                </a>
+              </li>
+              <li class="social__item social__skype">
+                <a class="social__link" href="skype:s-eremin?call">
+                  <span class="visually-hidden">skype link</span>
+                  <svg class="social__icon social__icon-skype" width="30" height="30">
+                    <use xlink:href="#icon-skype"></use>
+                  </svg>
+                  skype
+                </a>
+              </li>
+              <li class="social__item social__linkedin">
+                <a class="social__link" href="https://www.facebook.com/profile.php?id=100001829714922" target="_blank">
+                  <span class="visually-hidden">linkedin link</span>
+                  <svg class="social__icon social__icon-facebook" width="30" height="30">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                  facebook
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="form" action="#" method="post">
+            <fieldset class="form__top">
+              <div class="form__fieldset-wrapper">
+                <input class="form__top-item form__name" type="text" name="name" placeholder="Name">
+                <input class="form__top-item form__email" type="email" name="email" placeholder="Email">
+                <input class="form__top-item form__phone" type="tel" name="phone" placeholder="Phone">
+              </div>
+            </fieldset>
+            <textarea class="form__message" name="message" rows="5" placeholder="Message"></textarea>
+            <button class="form__submit-button btn" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+      <div class="footer__bottom">
+        <ul class="copyright">
+          <li class="copyright__item">© Sergey Yeromin 2017</li>
+          <li class="copyright__item">
+            <a class="copyright__github-link" href="https://github.com/IerominSergii/sergeyyeromin">Github</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    
+    <script src="js/smoothTransition.js"></script>
+    
+  </body>
+</html>
