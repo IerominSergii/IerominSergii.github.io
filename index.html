@@ -18,12 +18,14 @@
     <header class="header" id="home">
       <div class="header__wrapper">
         <!-- id="menu" is for smooth transition by the page -->
-        <nav class="header__nav" id="menu">
+        <nav class="header__nav header__nav--nojs" id="menu">
           <div class="header__logo">
-            <span class="header__logo-name">Sergey Yeromin</span>
-            <span class="header__technologies">Web Design & Development</span>
+            <div class="header__logo-wrapper">
+              <span class="header__logo-name">Sergey Yeromin</span>
+              <span class="header__technologies">Web Design & Development</span>
+            </div>
           </div>
-          <div class="header__toggle">Menu</div>
+          <div class="header__toggle header__toggle--hidden">Menu</div>
           <ul class="header__menu">
             <li class="header__menu-item header__projects">
               <a class="header__menu-link" href="#projects">Projects</a>
@@ -62,11 +64,15 @@
         <div class="projects__wrapper">
           <h2 class="projects__title visually-hidden">Projects</h2>
           <article class="projects__project project">
-            <a class="project__image-link">
+            <a class="project__image-link" href="mishka/index.html">
               <picture class="project__picture">
-                <source srcset="img/responsive-showcase-presentation__Mishka.jpg" media="(min-width: 1150px)">
-                <source srcset="img/responsive-showcase-presentation__Mishka.jpg" media="(min-width: 768px)">
-                <img class="project__image" src="img/responsive-showcase-presentation__Mishka.jpg" alt="project">
+                <source type="image/webp" srcset="img/mishka-desktop@1x.webp 1x, img/mishka-desktop@2x.webp 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/mishka-tablet@1x.webp 1x, img/mishka-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/mishka-mobile@1x.webp 1x, img/mishka-mobile@2x.webp 2x">
+                
+                <source srcset="img/mishka-desktop@1x.jpg 1x, img/mishka-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/mishka-tablet@1x.jpg 1x, img/mishka-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="project__image" src="img/mishka-mobile@1x.jpg" srcset="img/mishka-mobile@2x.jpg 2x" alt="mishka">
               </picture>
             </a>
             <div class="project__info">
@@ -83,9 +89,13 @@
           <article class="projects__project project">
             <a class="project__image-link">
               <picture class="project__picture">
-                <source srcset="img/kekstagram.png" media="(min-width: 1150px)">
-                <source srcset="img/kekstagram.png" media="(min-width: 768px)">
-                <img class="project__image" src="img/kekstagram.png" alt="kekstagram">
+                <source type="image/webp" srcset="img/kekstagram-desktop@1x.webp 1x, img/kekstagram-desktop@2x.webp 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/kekstagram-tablet@1x.webp 1x, img/kekstagram-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/kekstagram-mobile@1x.webp 1x, img/kekstagram-mobile@2x.webp 2x">
+                
+                <source srcset="img/kekstagram-desktop@1x.jpg 1x, img/kekstagram-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/kekstagram-tablet@1x.jpg 1x, img/kekstagram-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="project__image" src="img/kekstagram-mobile@1x.jpg" srcset="img/kekstagram-mobile@2x.jpg 2x" alt="kekstagram">
               </picture>
             </a>
             <div class="project__info">
@@ -102,9 +112,13 @@
           <article class="projects__project project">
             <a class="project__image-link">
               <picture class="project__picture">
-                <source srcset="img/gllasy.png" media="(min-width: 1150px)">
-                <source srcset="img/gllasy.png" media="(min-width: 768px)">
-                <img class="project__image" src="img/gllasy.png" alt="gllasy">
+                <source type="image/webp" srcset="img/gllasy-desktop@1x.webp 1x, img/gllasy-desktop@2x.webp 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/gllasy-tablet@1x.webp 1x, img/gllasy-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/gllasy-mobile@1x.webp 1x, img/gllasy-mobile@2x.webp 2x">
+                
+                <source srcset="img/gllasy-desktop@1x.jpg 1x, img/gllasy-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/gllasy-tablet@1x.jpg 1x, img/gllasy-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="project__image" src="img/gllasy-mobile@1x.jpg" srcset="img/gllasy-mobile@2x.jpg 2x" alt="gllasy">
               </picture>
             </a>
             <div class="project__info">
@@ -120,9 +134,13 @@
           <article class="projects__project project">
             <a class="project__image-link">
               <picture class="project__picture">
-                <source srcset="img/nerds.png" media="(min-width: 1150px)">
-                <source srcset="img/nerds.png" media="(min-width: 768px)">
-                <img class="project__image" src="img/nerds.png" alt="gllasy">
+                <source type="image/webp" srcset="img/nerds-desktop@1x.webp 1x, img/nerds-desktop@2x.webp 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/nerds-tablet@1x.webp 1x, img/nerds-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/nerds-mobile@1x.webp 1x, img/nerds-mobile@2x.webp 2x">
+                
+                <source srcset="img/nerds-desktop@1x.jpg 1x, img/nerds-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/nerds-tablet@1x.jpg 1x, img/nerds-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="project__image" src="img/nerds-mobile@1x.jpg" srcset="img/nerds-mobile@2x.jpg 2x" alt="nerds">
               </picture>
             </a>
             <div class="project__info">
@@ -138,9 +156,13 @@
           <article class="projects__project project">
             <a class="project__image-link">
               <picture class="project__picture">
-                <source srcset="img/barbershop.png" media="(min-width: 1150px)">
-                <source srcset="img/barbershop.png" media="(min-width: 768px)">
-                <img class="project__image" src="img/barbershop.png" alt="gllasy">
+                <source type="image/webp" srcset="img/barbershop-desktop@1x.webp 1x, img/barbershop-desktop@2x.webp 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/barbershop-tablet@1x.webp 1x, img/barbershop-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/barbershop-mobile@1x.webp 1x, img/barbershop-mobile@2x.webp 2x">
+                
+                <source srcset="img/barbershop-desktop@1x.jpg 1x, img/barbershop-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/barbershop-tablet@1x.jpg 1x, img/barbershop-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="project__image" src="img/barbershop-mobile@1x.jpg" srcset="img/barbershop-mobile@2x.jpg 2x" alt="barbershop">
               </picture>
             </a>
             <div class="project__info">
@@ -161,12 +183,13 @@
         <h2 class="map__title visually-hidden">Projects</h2>
         <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.130259948444!2d24.017679184409822!3d49.78361530114731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7d4a272a889%3A0x91c11c1720da375e!2z0JHQsNCz0LDRgtC-0LrQstCw0YDRgtC40YDQvdC40Lkg0LHRg9C00LjQvdC-0LosINCy0YPQu9C40YbRjyDQmtCw0YDQu9CwINCc0ZbQutC70YzQvtGI0LAsIDE1LCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1509386748979" frameborder="0" style="border:0" allowfullscreen=""></iframe>
       </section>
-      <section class="footer__contacts" id="contacts" name="contacts">
+      <section class="footer__contacts" name="contacts">
         <div class="footer__contacts-wrapper">
           <div class="contacts">
-            <img class="contacts__user-photo" src="img/ava.jpg" width="130" alt="user-photo">
-            <!-- <picture class="contacts__user-photo">
-            </picture> -->
+            <picture class="contacts__user-picture">
+              <source type="image/webp" srcset="img/ava@1x.webp 1x, img/ava@2x.webp 2x">
+              <img class="contacts__user-photo" id="contacts" src="img/ava@1x.jpg" srcset="img/ava@2x.jpg 2x" width="130" alt="user-photo">
+            </picture>
             <div class="contacts__phone">
               <a class="contacts__phone-link" href="tel:0636590054">+38 (063) 659-0054</a>
             </div>
@@ -224,6 +247,7 @@
     </footer>
     
     <script src="js/smoothTransition.js"></script>
+    <script src="js/mobileMenu.js"></script>
     
   </body>
 </html>
