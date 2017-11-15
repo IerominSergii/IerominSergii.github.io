@@ -757,6 +757,7 @@ img {
   margin-bottom: 20px;
   padding: 0;
   padding: 18px 25px;
+  resize: none;
   font-size: 15px;
   vertical-align: 17px;
   outline: none;

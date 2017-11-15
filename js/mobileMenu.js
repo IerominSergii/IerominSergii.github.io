@@ -5,12 +5,14 @@
   var headerNav = document.querySelector('.header__nav');
   var toggle = headerNav.querySelector('.header__toggle');
   var menu = headerNav.querySelector('.header__menu');
-  var menuLink = headerNav.querySelectorAll('.header__menu-link');
+  var menuLink = headerNav.querySelectorAll('header__menu-link');
 
-  // prepering for 'with js default state'
-  headerNav.classList.remove('header__nav--nojs');
-  toggle.classList.remove('header__toggle--hidden');
-  menu.classList.add('header__menu--hidden');
+  // turn on the JavaScript
+  var turnOnJavaScript = function () {
+    headerNav.classList.remove('header__nav--nojs');
+    toggle.classList.remove('header__toggle--hidden');
+    menu.classList.add('header__menu--hidden');
+  };
 
   var openMenu = function () {
     toggle.classList.remove('header__toggle--closed');
@@ -19,7 +21,9 @@
 
     toggle.removeEventListener('click', openMenu);
     toggle.addEventListener('click', closeMenu);
-    menuLink.addEventListener('click', closeMenu);
+    addEventListenerForArray(menuLink, closeMenu);
+
+    // menuLink.addEventListener('click', closeMenu);
   };
 
   var closeMenu = function () {
@@ -29,9 +33,26 @@
 
     toggle.removeEventListener('click', closeMenu);
     toggle.addEventListener('click', openMenu);
-    menuLink.removeEventListener('click', closeMenu);
+    removeEventListenerForArray(menuLink, closeMenu);
+
+    // menuLink.removeEventListener('click', closeMenu);
   };
 
+  var addEventListenerForArray = function (arr, funct) {
+    for (var i = 0; i <= arr.lenght; i++) {
+      arr[i].addEventListener('click', funct);
+    }
+  };
+
+  var removeEventListenerForArray = function (arr, funct) {
+    for (var i = 0; i <= arr.lenght; i++) {
+      arr[i].removeEventListener('click', funct);
+    }
+  };
+
+  turnOnJavaScript();
+
+  // menuLink.removeEventListener('click', closeMenu);
   toggle.addEventListener('click', openMenu);
   closeMenu();
 })();
