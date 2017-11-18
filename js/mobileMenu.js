@@ -34,8 +34,6 @@
     toggle.removeEventListener('click', closeMenu);
     toggle.addEventListener('click', openMenu);
     removeEventListenerForArray(menuLink, closeMenu);
-
-    // menuLink.removeEventListener('click', closeMenu);
   };
 
   var addEventListenerForArray = function (arr, funct) {
@@ -52,7 +50,6 @@
 
   turnOnJavaScript();
 
-  // menuLink.removeEventListener('click', closeMenu);
   toggle.addEventListener('click', openMenu);
   closeMenu();
 })();

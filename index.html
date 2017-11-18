@@ -64,7 +64,7 @@
         <div class="projects__wrapper">
           <h2 class="projects__title visually-hidden">Projects</h2>
           <article class="projects__project project">
-            <a class="project__image-link" href="mishka/index.html">
+            <div class="project__image-link" href="mishka/index.html">
               <picture class="project__picture">
                 <source type="image/webp" srcset="img/mishka-desktop@1x.webp 1x, img/mishka-desktop@2x.webp 2x" media="(min-width: 1150px)">
                 <source type="image/webp" srcset="img/mishka-tablet@1x.webp 1x, img/mishka-tablet@2x.webp 2x" media="(min-width: 768px)">
@@ -74,7 +74,7 @@
                 <source srcset="img/mishka-tablet@1x.jpg 1x, img/mishka-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="project__image" src="img/mishka-mobile@1x.jpg" srcset="img/mishka-mobile@2x.jpg 2x" alt="mishka">
               </picture>
-            </a>
+            </div>
             <div class="project__info">
               <h3 class="project__title">Mishka</h3>
               <p class="project__description">Mishka is a small store of handmade well-crafted goods.</p>
@@ -87,7 +87,7 @@
             </div>
           </article>
           <article class="projects__project project">
-            <a class="project__image-link">
+            <div class="project__image-link">
               <picture class="project__picture">
                 <source type="image/webp" srcset="img/kekstagram-desktop@1x.webp 1x, img/kekstagram-desktop@2x.webp 2x" media="(min-width: 1150px)">
                 <source type="image/webp" srcset="img/kekstagram-tablet@1x.webp 1x, img/kekstagram-tablet@2x.webp 2x" media="(min-width: 768px)">
@@ -97,7 +97,7 @@
                 <source srcset="img/kekstagram-tablet@1x.jpg 1x, img/kekstagram-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="project__image" src="img/kekstagram-mobile@1x.jpg" srcset="img/kekstagram-mobile@2x.jpg 2x" alt="kekstagram">
               </picture>
-            </a>
+            </div>
             <div class="project__info">
               <h3 class="project__title">Kekstagram</h3>
               <p class="project__description">Photo-sharing application and service that allows users to share pictures</p>
@@ -110,7 +110,7 @@
             </div>
           </article>
           <article class="projects__project project">
-            <a class="project__image-link">
+            <div class="project__image-link">
               <picture class="project__picture">
                 <source type="image/webp" srcset="img/gllasy-desktop@1x.webp 1x, img/gllasy-desktop@2x.webp 2x" media="(min-width: 1150px)">
                 <source type="image/webp" srcset="img/gllasy-tablet@1x.webp 1x, img/gllasy-tablet@2x.webp 2x" media="(min-width: 768px)">
@@ -120,7 +120,7 @@
                 <source srcset="img/gllasy-tablet@1x.jpg 1x, img/gllasy-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="project__image" src="img/gllasy-mobile@1x.jpg" srcset="img/gllasy-mobile@2x.jpg 2x" alt="gllasy">
               </picture>
-            </a>
+            </div>
             <div class="project__info">
               <h3 class="project__title">Gllasy</h3>
               <p class="project__description">Just web-site of Ice-cream shop</p>
@@ -132,7 +132,7 @@
             </div>
           </article>
           <article class="projects__project project">
-            <a class="project__image-link">
+            <div class="project__image-link">
               <picture class="project__picture">
                 <source type="image/webp" srcset="img/nerds-desktop@1x.webp 1x, img/nerds-desktop@2x.webp 2x" media="(min-width: 1150px)">
                 <source type="image/webp" srcset="img/nerds-tablet@1x.webp 1x, img/nerds-tablet@2x.webp 2x" media="(min-width: 768px)">
@@ -142,7 +142,7 @@
                 <source srcset="img/nerds-tablet@1x.jpg 1x, img/nerds-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="project__image" src="img/nerds-mobile@1x.jpg" srcset="img/nerds-mobile@2x.jpg 2x" alt="nerds">
               </picture>
-            </a>
+            </div>
             <div class="project__info">
               <h3 class="project__title">Nerds</h3>
               <p class="project__description">Photo-sharing application and service that allows users to share pictures</p>
@@ -154,7 +154,7 @@
             </div>
           </article>
           <article class="projects__project project">
-            <a class="project__image-link">
+            <div class="project__image-link">
               <picture class="project__picture">
                 <source type="image/webp" srcset="img/barbershop-desktop@1x.webp 1x, img/barbershop-desktop@2x.webp 2x" media="(min-width: 1150px)">
                 <source type="image/webp" srcset="img/barbershop-tablet@1x.webp 1x, img/barbershop-tablet@2x.webp 2x" media="(min-width: 768px)">
@@ -164,7 +164,7 @@
                 <source srcset="img/barbershop-tablet@1x.jpg 1x, img/barbershop-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="project__image" src="img/barbershop-mobile@1x.jpg" srcset="img/barbershop-mobile@2x.jpg 2x" alt="barbershop">
               </picture>
-            </a>
+            </div>
             <div class="project__info">
               <h3 class="project__title">Barbershop</h3>
               <p class="project__description">Photo-sharing application and service that allows users to share pictures</p>
@@ -181,13 +181,7 @@
     <footer class="footer">
       <section class="footer__map map">
         <h2 class="map__title visually-hidden">Projects</h2>
-        <div class="map__iframe" id="map"></div>
-        <!-- <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.130259948444!2d24.017679184409822!3d49.78361530114731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7d4a272a889%3A0x91c11c1720da375e!2z0JHQsNCz0LDRgtC-0LrQstCw0YDRgtC40YDQvdC40Lkg0LHRg9C00LjQvdC-0LosINCy0YPQu9C40YbRjyDQmtCw0YDQu9CwINCc0ZbQutC70YzQvtGI0LAsIDE1LCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1509386748979" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-        <!-- <iframe class="map__iframe"
-          
-        src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBHumc-_hIFfXK6jXzUES-XBDT5W4O2jFs&center=49.78086940924822,24.020016895507876&zoom=15&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0xf5f5f5&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x616161&style=element:labels.text.stroke%7Ccolor:0xf5f5f5&style=feature:administrative.land_parcel%7Celement:labels%7Cvisibility:off&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:poi%7Celement:labels.text%7Cvisibility:off&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:road%7Celement:geometry%7Ccolor:0xffffff&style=feature:road.arterial%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:road.highway%7Celement:geometry%7Ccolor:0xdadada&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:road.local%7Celement:labels%7Cvisibility:off&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:transit.line%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:transit.station%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:water%7Celement:geometry%7Ccolor:0xc9c9c9&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&size=480x360"
-          
-        frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.8719184447814!2d24.030519725415214!3d49.841212875848996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1510998306795" frameborder="0" style="border:0" allowfullscreen=""></iframe>
       </section>
       <section class="footer__contacts" name="contacts">
         <div class="footer__contacts-wrapper">
@@ -254,9 +248,6 @@
     
     <script src="js/smoothTransition.js"></script>
     <script src="js/mobileMenu.js"></script>
-    <script src="js/customMap.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHumc-_hIFfXK6jXzUES-XBDT5W4O2jFs&callback=initMap" async="" defer=""></script>
-    <!-- AIzaSyBHumc-_hIFfXK6jXzUES-XBDT5W4O2jFs -->
     
   </body>
 </html>
