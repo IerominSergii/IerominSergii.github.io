@@ -333,18 +333,19 @@ img {
   width: 100%;
   height: 54px;
   margin-bottom: 15px;
-  color: #FFFFFF;
-  border: 1px solid #FDD66F;
+  color: #252B30;
   border-radius: 5px;
-  background-color: transparent; }
+  background-color: #FDD66F;
+  border: 1px solid #FDD66F; }
 
 .inner-header__order-item:last-child {
   margin-right: 0;
   margin-bottom: 0; }
 
 .inner-header__order-item:hover {
-  color: #252B30;
-  background-color: #FDD66F;
+  color: #FFFFFF;
+  border: 1px solid #FDD66F;
+  background-color: transparent;
   -webkit-transition: all 0.4s;
   transition: all 0.4s; }
 
@@ -369,9 +370,9 @@ img {
 @media (min-width: 768px) {
   .inner-header__wrapper {
     width: 708px;
-    min-height: 600px;
-    padding-top: 170px;
-    padding-bottom: 100px; }
+    min-height: 450px;
+    padding-top: 100px;
+    padding-bottom: 20px; }
   .inner-header__title {
     font-size: 55px;
     vertical-align: 60px; }
@@ -395,7 +396,9 @@ img {
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 900px;
-    min-height: 650px; } }
+    min-height: 550px;
+    padding-top: 170px;
+    padding-bottom: 50px; } }
 
 .projects {
   display: -webkit-box;
@@ -513,6 +516,12 @@ img {
   fill: #93A4A9;
   opacity: 0.5; }
 
+.project__icon-link:hover {
+  opacity: 0.3; }
+
+.project__icon-link:active {
+  opacity: 0.2; }
+
 @media (min-width: 768px) {
   .project {
     width: 100%;
@@ -614,8 +623,8 @@ img {
   left: auto;
   right: auto;
   z-index: -1;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #FDD66F; }
 
@@ -659,7 +668,10 @@ img {
     width: 70px;
     height: 70px; }
   .features__icon-wrapper {
-    height: 70px; } }
+    height: 70px; }
+  .features__icon-wrapper::before {
+    width: 50px;
+    height: 50px; } }
 
 @media (min-width: 1150px) {
   .features-wrapper {
@@ -668,7 +680,10 @@ img {
     width: 80px;
     height: 80px; }
   .features__icon-wrapper {
-    height: 80px; } }
+    height: 80px; }
+  .features__icon-wrapper::before {
+    width: 60px;
+    height: 60px; } }
 
 .footer__contacts {
   display: -webkit-box;
