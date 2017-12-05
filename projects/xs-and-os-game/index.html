@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Xs and Os game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <main class="start">
+      <div class="start__wrapper">
+        <h1 class="start__title">Xs&nbsp;and&nbsp;Os game   </h1>
+        <p class="start__description">Current game</p>
+        
+        <button class="start__button" type="button">play</button>
+      </div>
+    </main>
+    
+    <template id="game-template" style="display: none">
+      <table class="start__game">
+        <tr class="start__row">
+          <td class="start__element start__element0"></td>
+          <td class="start__element start__element1"></td>
+          <td class="start__element start__element2"></td>
+        </tr>
+        <tr class="start__row">
+          <td class="start__element start__element3"></td>
+          <td class="start__element start__element4"></td>
+          <td class="start__element start__element5"></td>
+        </tr>
+        <tr class="start__row">
+          <td class="start__element start__element6"></td>
+          <td class="start__element start__element7"></td>
+          <td class="start__element start__element8"></td>
+        </tr>
+      </table>
+    </template>
+    <template id="winner-template" style="display: none">
+      <div class="start__winner"></div>
+    </template>
+    <template id="close-template" style="display: none">
+      <div class="start__close"></div>
+    </template>
+    
+    <script src="js/SergeyYerominTest2.js"></script>
+    <script src="js/domElements.js"></script>
+  </body>
+</html>
