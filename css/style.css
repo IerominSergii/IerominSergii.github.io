@@ -412,6 +412,23 @@ img {
   padding-left: 35px;
   padding-right: 35px; }
 
+.inner-header__hire {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #c8c8c8; }
+
+.inner-header__hire:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  border: none; }
+
+.inner-header__hire:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  padding-top: 3px;
+  -webkit-transition: all 0s;
+  transition: all 0s; }
+
 @media (min-width: 768px) {
   .inner-header {
     background-size: 120%;
