@@ -50,6 +50,9 @@ body {
 .card-img {
   width: 560px; }
 
+.features__article {
+  height: 80vh; }
+
 .features__picture {
   width: 90%;
   height: auto; }
@@ -81,6 +84,9 @@ body {
 
 .footer__link-dribbble {
   cursor: pointer; }
+
+.examples {
+  height: 70vh; }
 
 .examples__carousel {
   max-height: 450px; }
