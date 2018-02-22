@@ -64,6 +64,9 @@ body {
 .features__smaller {
   width: 50%; }
 
+.features__visualise {
+  height: 100vh; }
+
 .free-icons__image {
   width: 200px;
   height: auto; }
