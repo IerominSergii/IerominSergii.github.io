@@ -1,18 +1,6 @@
 body {
   background-color: #ffffff; }
 
-.visually-hidden {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap; }
-
 .toTop {
   display: none; }
 
@@ -50,6 +38,12 @@ body {
   width: 560px;
   height: auto; }
 
+.set__mask {
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(65%, black));
+  -webkit-mask-image: linear-gradient(to top, transparent 10%, black 65%);
+          mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(65%, black));
+          mask-image: linear-gradient(to top, transparent 10%, black 65%); }
+
 .card {
   background-color: #ffffff; }
 
@@ -57,11 +51,11 @@ body {
   width: 560px; }
 
 .features__picture {
-  width: 100%;
+  width: 90%;
   height: auto; }
 
 .features__image {
-  width: 100%;
+  width: 70%;
   height: auto; }
 
 .free-icons__image {
