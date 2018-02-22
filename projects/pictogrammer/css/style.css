@@ -58,6 +58,9 @@ body {
   width: 70%;
   height: auto; }
 
+.features__smaller {
+  width: 50%; }
+
 .free-icons__image {
   width: 200px;
   height: auto; }
