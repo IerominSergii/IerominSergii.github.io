@@ -41,33 +41,21 @@
         Pictogrammer
       </a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-expand ml-auto" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-3">
-          <li class="nav-item mr-3">
+          <li class="nav-item mr-md-3">
             <a class="nav-link" href="all_icons.html">View all icons</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-primary" href="purchase.html"><strong>Buy now</strong></a>
           </li>
         </ul>
-        
-        <!-- <div class="dropdown show">
-          <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Menu
-          </a>
-
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="free_icons.html">Free icons</a>
-            <a class="dropdown-item" href="#">License</a>
-            <a class="dropdown-item" href="#">Contacts</a>
-          </div>
-        </div> -->
       </div>
     </nav><!-- /.nav -->
 
     <header class="header d-flex flex-column justify-content-center align-items-center text-center">
-      <div class="container">
-        <h1 class="display-4">Pictogrammer</h1>
+      <div class="container pt-5 pt-sm-0">
+        <h1 class="header_title display-4">Pictogrammer</h1>
         <p class="lead header_text mb-5">3'800 well-crafted SVG icons</p>
         <a class="btn btn-primary" href="all_icons.html" role="button">View all icons</a>
       </div><!-- /.container -->
@@ -75,18 +63,28 @@
       
     <main class="main d-flex flex-column align-items-center">
       
-      <section class="container d-flex flex-column align-items-center">
+      <section class="container d-flex flex-column align-items-center mb-5">
         <article class="set d-flex justify-content-center flex-column text-center mt-3 mb-5">
-          <h3 class="set__theme align-self-center mb-4">General</h3>
+          <h3 class="set__theme align-self-center mb-5">General</h3>
           <picture class="set__picture">
-            <img class="set__image" src="img/general.png" srcset="img/general.png 2x" alt="General">
+            <source type="image/webp" srcset="img/index_general_desktop@1x.webp 1x, img/index_general_desktop@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/index_general_mobile@1x.webp 1x, img/index_general_mobile@2x.webp 2x">
+
+            
+            <source srcset="img/index_general.png 1x, img/index_general@2x.png 2x" media="(min-width: 768px)">
+            <img class="set__image col-12 col-sm-10 col-lg-8" src="img/index_general_mobile@1x.png" srcset="img/index_general_mobile@2x.png 2x" alt="General">
           </picture>
         </article>
         
-        <article class="set d-flex justify-content-center flex-column text-center mt-3 mb-3">
-          <h3 class="set__theme align-self-center mb-4">Communication</h3>
+        <article class="set d-flex justify-content-center flex-column text-center mt-5 mb-3">
+          <h3 class="set__theme align-self-center mb-5">Communication</h3>
           <picture class="set__picture">
-            <img class="set__image set__mask" src="img/communication.png" srcset="img/communication.png 2x" alt="Communication">
+            <source type="image/webp" srcset="img/index_communication_desktop@1x.webp 1x, img/index_communication_desktop@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/index_communication_mobile@1x.webp 1x, img/index_communication_mobile@2x.webp 2x">
+
+            
+            <source srcset="img/index_communication_desktop@1x.png 1x, img/index_communication_desktop@2x.png 2x" media="(min-width: 768px)">
+            <img class="set__image set__mask col-12 col-sm-10 col-lg-8" src="img/index_communication_mobile@1x.png" srcset="img/index_communication_mobile@2x.png 2x" alt="Communication">
           </picture>
         </article>
         
@@ -95,78 +93,80 @@
       
       <section class="container d-flex flex-column justify-content-center align-items-stretch mb-5">
         
-        <article class="features__article pixel_perfet d-flex">
-          <div class="col-6 p-5 d-flex flex-column justify-content-center align-items-center">
-            <h3 class="ml-5 mr-5">Pixel Perfect</h3>
-            <p class="ml-5 mr-5 lead text-center">We use 48px grid system</p>
+        <article class="features__article d-flex flex-wrap mt-5 mb-5">
+          <div class="col-sm-12 col-md-6 mb-5 mb-md-0 d-flex flex-column justify-content-center align-items-center">
+            <h3 class="text-center ml-5 mr-5">Pixel Perfect</h3>
+            <p class="mb-4 mb-sm-0 ml-sm-5 mr-sm-5 lead text-center">We use 48px grid system</p>
           </div>
-          <div class="col-6 d-flex flex-column justify-content-center align-items-center">
-            <picture class="d-flex flex-column justify-content-stretch align-items-center features__picture pt-5 pb-5 mt-5 mb-5">
+          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <picture class="d-flex flex-column justify-content-stretch align-items-center features__picture pb-5 pb-md-0">
               <img class="features__image" src="img/pixel_perfect@1x.png" srcset="img/pixel_perfect@2x.png 2x" alt="Pixel perfect">
             </picture>
           </div>
         </article>
         
-        <article class="features__article balanced d-flex">
-          <div class="col-6 p-5 d-flex flex-column justify-content-center align-items-center">
-            <h3 class="ml-5 mr-5">Balanced</h3>
-            <p class="ml-5 mr-5 lead text-center">All icons are created in the consisten style: minimal and balanced.</p>
+        <article class="features__article d-flex flex-wrap mt-5 mb-5">
+          <div class="col-sm-12 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center">
+            <h3 class="">Balanced</h3>
+            <p class="mb-0 ml-1 mr-1 ml-sm-2 mr-sm-2 lead text-center">All icons are created in the consisten style: minimal and balanced.</p>
           </div>
-          <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
             <picture class="d-flex flex-column justify-content-stretch align-items-center features__picture">
               <img class="features__image features__smaller" src="img/balanced@2x.png" alt="Balanced">
             </picture>
           </div>
         </article>
         
-        <article class="examples d-flex">
-          <div class="col-6 p-5 d-flex flex-column justify-content-center align-items-center">
+        <article class="examples d-flex flex-wrap">
+          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
             <h3 class="ml-5 mr-5 text-center">Create with</h3>
-            <p class="ml-5 mr-5 lead text-center">Use simple icons to create clear and minimal design.</p>
+            <p class="ml-sm-5 mr-sm-5 mb-0 lead text-center">Use simple icons to create clear and minimal design.</p>
           </div>
-          <div id="carouselExampleIndicators" class="examples__carousel carousel slide col-6 d-flex flex-column justify-content-center align-items-center" data-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item examples_item active">
-                <img class="d-block examples_image mr-0" src="img/Mug_PSD_MockUp_ 450x450_transparent.png" alt="Bag">
+              <div class="carousel-item active">
+                <img class="d-block examples_image" src="img/Mug_PSD_MockUp_ 450x450_transparent.png" alt="Bag">
               </div>
               <div class="carousel-item">
-                <img class="d-block examples_image mr-0" src="img/Small_Canvas_Tote_Bag_MockUp_450х450.png" alt="Labels">
+                <img class="d-block examples_image" src="img/Small_Canvas_Tote_Bag_MockUp_450х450.png" alt="Labels">
               </div>
               <div class="carousel-item">
-                <img class="d-block examples_image mr-0" src="img/Label_Tag _MockUp_2_450x450_transparent.png" alt="Mug">
+                <img class="d-block examples_image" src="img/Label_Tag _MockUp_2_450x450_transparent.png" alt="Mug">
               </div>
             </div>
           </div>
           
         </article>
         
-        <a class="position-relative btn btn-primary align-self-center mb-5 mt-0" href="all_icons.html" role="button">View all icons</a>
+        <a class="position-relative btn btn-primary align-self-center mb-5" href="all_icons.html" role="button">View all icons</a>
         
-        <div class="features__visualise">
-          <h3 class="text-center mt-5">Visualize your methafors </h3>
-          <p class="lead text-center mb-5">Make them stronger and easier to understand.</p>
-          <div class="container d-flex justify-content-around mb-5 pl-5 pr-5">
-            <div class="col-3 border rounded" style="width: 18rem;">
-              <img class="card-img-top" src="img/card_01.png" alt="Card image 1">
-            </div>
-            
-            <div class="col-3 minicards__card border rounded" style="width: 18rem;">
-              <img class="card-img-top" src="img/card_02.png" alt="Card image 2">
-            </div>
-            
-            <div class="col-3 minicards__card border rounded" style="width: 18rem;">
-              <img class="card-img-top" src="img/card_03.png" alt="Card image 3">
-            </div>
-            
+        <article class="visualise d-flex flex-wrap mb-5">
+          <div class="col-sm-12 col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center">
+            <h3 class="ml-5 mr-5 text-center">Visualize your methafors</h3>
+            <p class="ml-sm-5 mr-sm-5 lead text-center">Make them stronger and easier to understand.</p>
           </div>
-        </div>
+          <div id="carouselExample" class="carousel slide col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block visualise_image ml-auto mr-auto border rounded" src="img/card_01.png" alt="Card image 1">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block visualise_image ml-auto mr-auto border rounded" src="img/card_02.png" alt="Card image 2">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block visualise_image ml-auto mr-auto border rounded" src="img/card_03.png" alt="Card image 3">
+              </div>
+            </div>
+          </div>
+          
+        </article>
         
-        <article class="examples d-flex mt-5 mb-5">
-          <div class="col-6 p-5 d-flex flex-column justify-content-center align-items-center">
+        <article class="examples d-flex flex-wrap">
+          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
             <h3 class="ml-5 mr-5 text-center">Make your project better</h3>
-            <p class="ml-5 mr-5 lead text-center">Perfect for mobile and web interface.</p>
+            <p class="ml-sm-5 mr-sm-5 lead text-center">Perfect for mobile and web interface.</p>
           </div>
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleSlidesOnly" class="carousel slide col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block examples_image" src="img/samsung_s8_mockup_450px.png" srcset="img/samsung_s8_mockup_450px.png 2x" alt="Phone_mockup">
@@ -176,12 +176,11 @@
               </div>
             </div>
           </div>
+          <a class="btn btn-primary align-self-start ml-auto mr-auto mt-5" href="all_icons.html" role="button">View all icons</a>
         </article>
-        
-        <a class="btn btn-primary align-self-center" href="all_icons.html" role="button">View all icons</a>
       </section>
       
-      <section class="container free-icons d-flex justify-content-center align-items-center flex-column mt-5 pt-5">
+      <section class="container free-icons d-flex justify-content-center align-items-center flex-column mt-5">
         <h3 class="col-12 free-icons__title text-center mb-5">Free Social Media Icons</h3>
         
         <div class="d-flex flex-column justify-content-center align-items-center mb-5">
@@ -193,7 +192,7 @@
         </div>
       </section>
       
-      <a class="btn btn-outline-primary fixed-bottom ml-auto mr-3 mb-3 col-1 toTop" href="#" role="button" onclick="topFunction()" id="myBtn" title="Go to top">To the top</a>
+      <a class="btn btn-outline-primary fixed-bottom ml-auto mr-3 mb-3 col-4 col-sm-2 toTop" href="#" role="button" onclick="topFunction()" id="myBtn" title="Go to top">To the top</a>
 
     </main>
     
