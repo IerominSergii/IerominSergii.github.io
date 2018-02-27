@@ -22,9 +22,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
-    
-
-    <title>Purchase | Pictogrammer</title>
+    <title>Free Icons | Pictogrammer</title>
     <!-- <base target="_top"> -->
   </head>
   <body>
@@ -36,8 +34,12 @@
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand text-hide" href="index.html">
-        <picture class="logo__picture">
-          <img class="logo__image" src="img/logo_pictog.png" srcset="img/logo_pictog.png 2x" width="40" height="40" alt="Logo image">
+        <picture class="top-nav__logo-picturee">
+          <source type="image/webp" srcset="img/logo_pictog-desktop@1x.webp 1x, img/logo_pictog-desktop@2x.webp 2x" media="(min-width: 768px)">
+          <source type="image/webp" srcset="img/logo_pictog-mobile@1x.webp 1x, img/logo_pictog-mobile@2x.webp 2x">
+          
+          <source srcset="img/logo_pictog-desktop@1x.png 1x, img/logo_pictog-desktop@2x.png 2x" media="(min-width: 768px)">
+          <img class="top-nav__logo-image" src="img/logo_pictog-mobile@1x.png" srcset="img/logo_pictog-mobile@2x.png 2x" width="40" height="40" alt="Logo image">
         </picture>
         Pictogrammer
       </a>
@@ -45,7 +47,7 @@
       <div class="navbar-expand ml-auto" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-3">
           <li class="nav-item">
-            <a class="nav-link" href="all_icons.html">View all icons</a>
+            <a class="nav-link" href="all_icons.html">All icons</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-primary" href="purchase.html" role="button"><strong>Buy now</strong></a>
@@ -60,7 +62,7 @@
       </div><!-- /.container -->
     </header><!-- /.header -->
       
-    <main class="main d-flex flex-column align-items-center">
+    <main class="free-icons__main main d-flex flex-column align-items-center">
       
       <section class="container d-flex justify-content-center align-items-center flex-column mt-5 mb-5">
         <div class="d-flex flex-column justify-content-center align-items-center">
@@ -88,13 +90,6 @@
         </a>
       </div>
     </footer>
-    
-    
-    
-    
-    
-    
-    
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

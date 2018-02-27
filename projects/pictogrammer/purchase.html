@@ -36,8 +36,12 @@
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand text-hide" href="index.html">
-        <picture class="logo__picture">
-          <img class="logo__image" src="img/logo_pictog.png" width="40" height="40" alt="Logo image">
+        <picture class="top-nav__logo-picturee">
+          <source type="image/webp" srcset="img/logo_pictog-desktop@1x.webp 1x, img/logo_pictog-desktop@2x.webp 2x" media="(min-width: 768px)">
+          <source type="image/webp" srcset="img/logo_pictog-mobile@1x.webp 1x, img/logo_pictog-mobile@2x.webp 2x">
+          
+          <source srcset="img/logo_pictog-desktop@1x.png 1x, img/logo_pictog-desktop@2x.png 2x" media="(min-width: 768px)">
+          <img class="top-nav__logo-image" src="img/logo_pictog-mobile@1x.png" srcset="img/logo_pictog-mobile@2x.png 2x" width="40" height="40" alt="Logo image">
         </picture>
         Pictogrammer
       </a>
@@ -48,7 +52,7 @@
             <a class="nav-link" href="free_icons.html">Free icons</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="all_icons.html"><strong>View all icons</strong></a>
+            <a class="nav-link" href="all_icons.html"><strong>All icons</strong></a>
           </li>
         </ul>
       </div>
@@ -64,7 +68,7 @@
       
       <section class="container mt-5 mb-5 d-flex justify-content-center">
         
-        <div class="card pl-0 pr-0">
+        <div class="card col-8 col-sm-5 col-md-4 col-lg-3 pl-0 pr-0 mt-md-5">
           <h5 class="card-header text-center w-100">General icons set</h5>
           <div class="card-body d-flex justify-content-center align-items-center flex-column pt-4">
             <p class="card-text">- 20 icons</p>
@@ -87,13 +91,6 @@
         </a>
       </div>
     </footer>
-    
-    
-    
-    
-    
-    
-    
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

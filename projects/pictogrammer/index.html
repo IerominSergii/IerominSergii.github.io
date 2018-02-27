@@ -22,9 +22,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
-    
-
-    <title>Icons Collection | Pictogrammer</title>
+    <title>SVG Icons Collection | Pictogrammer</title>
     <!-- <base target="_top"> -->
   </head>
   <body>
@@ -33,10 +31,14 @@
       <svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-dribbble" viewbox="0 0 384 384"><path d="M192 360c-92.6 0-168-75.4-168-168S99.4 24 192 24s168 75.4 168 168-75.4 168-168 168zm0-320c-83.8 0-152 68.2-152 152s68.2 152 152 152 152-68.2 152-152S275.8 40 192 40z"></path><path d="M255.7 335.3C251.4 205 197.6 95 118.7 55.1l7.2-14.3c84.1 42.5 141.3 157.9 145.8 294z"></path><path d="M72 192a368.6 368.6 0 0 1-40.6-2.2l1.8-15.9A350.2 350.2 0 0 0 72 176c93.8 0 179.8-37 230.1-98.9l12.4 10.1C261.2 152.8 170.6 192 72 192zm31.7 132.6l-13.8-8C135.7 237.4 205 192 280 192a185.9 185.9 0 0 1 73.6 15.3l-6.3 14.7a170.1 170.1 0 0 0-67.3-14c-69.2 0-133.4 42.5-176.3 116.6z"></path></symbol></svg>
     </svg>
     
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand text-hide" href="index.html">
-        <picture class="logo__picture">
-          <img class="logo__image" src="img/logo_pictog.png" srcset="img/logo_pictog.png 2x" width="40" height="40" alt="Logo image">
+    <nav class="top-nav navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="top-nav__logo navbar-brand text-hide" href="index.html">
+        <picture class="top-nav__logo-picturee">
+          <source type="image/webp" srcset="img/logo_pictog-desktop@1x.webp 1x, img/logo_pictog-desktop@2x.webp 2x" media="(min-width: 768px)">
+          <source type="image/webp" srcset="img/logo_pictog-mobile@1x.webp 1x, img/logo_pictog-mobile@2x.webp 2x">
+          
+          <source srcset="img/logo_pictog-desktop@1x.png 1x, img/logo_pictog-desktop@2x.png 2x" media="(min-width: 768px)">
+          <img class="top-nav__logo-image" src="img/logo_pictog-mobile@1x.png" srcset="img/logo_pictog-mobile@2x.png 2x" width="40" height="40" alt="Logo image">
         </picture>
         Pictogrammer
       </a>
@@ -44,7 +46,7 @@
       <div class="navbar-expand ml-auto" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-3">
           <li class="nav-item mr-md-3">
-            <a class="nav-link" href="all_icons.html">View all icons</a>
+            <a class="nav-link" href="all_icons.html">All icons</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-primary" href="purchase.html"><strong>Buy now</strong></a>
@@ -56,7 +58,7 @@
     <header class="header d-flex flex-column justify-content-center align-items-center text-center">
       <div class="container pt-5 pt-sm-0">
         <h1 class="header_title display-4">Pictogrammer</h1>
-        <p class="lead header_text mb-5">3'800 well-crafted SVG icons</p>
+        <p class="lead header_text mb-5">SVG Icons</p>
         <a class="btn btn-primary" href="all_icons.html" role="button">View all icons</a>
       </div><!-- /.container -->
     </header><!-- /.header -->
@@ -69,7 +71,6 @@
           <picture class="set__picture">
             <source type="image/webp" srcset="img/index_general_desktop@1x.webp 1x, img/index_general_desktop@2x.webp 2x" media="(min-width: 768px)">
             <source type="image/webp" srcset="img/index_general_mobile@1x.webp 1x, img/index_general_mobile@2x.webp 2x">
-
             
             <source srcset="img/index_general.png 1x, img/index_general@2x.png 2x" media="(min-width: 768px)">
             <img class="set__image col-12 col-sm-10 col-lg-8" src="img/index_general_mobile@1x.png" srcset="img/index_general_mobile@2x.png 2x" alt="General">
@@ -100,7 +101,11 @@
           </div>
           <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
             <picture class="d-flex flex-column justify-content-stretch align-items-center features__picture pb-5 pb-md-0">
-              <img class="features__image" src="img/pixel_perfect@1x.png" srcset="img/pixel_perfect@2x.png 2x" alt="Pixel perfect">
+              <source type="image/webp" srcset="img/pixel_perfect_desktop@1x.webp 1x, img/pixel_perfect_desktop@2x.webp 2x" media="(min-width: 768px)">
+              <source type="image/webp" srcset="img/pixel_perfect_mobile@1x.webp 1x, img/pixel_perfect_mobile@2x.webp 2x">
+              
+              <source srcset="img/pixel_perfect_desktop@1x.png 1x, img/pixel_perfect_desktop@2x.png 2x" media="(min-width: 768px)">
+              <img class="features__image" src="img/pixel_perfect_mobile@1x.png" srcset="img/pixel_perfect_mobile@2x.png 2x" alt="Pixel perfect">
             </picture>
           </div>
         </article>
@@ -108,39 +113,60 @@
         <article class="features__article d-flex flex-wrap mt-5 mb-5">
           <div class="col-sm-12 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center">
             <h3 class="">Balanced</h3>
-            <p class="mb-0 ml-1 mr-1 ml-sm-2 mr-sm-2 lead text-center">All icons are created in the consisten style: minimal and balanced.</p>
+            <p class="mb-0 ml-1 mr-1 ml-sm-2 mr-sm-2 ml-md-3 mr-md-3 ml-lg-5 mr-lg-5 lead text-center">All icons are created in the consisten style: minimal and balanced.</p>
           </div>
           <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
             <picture class="d-flex flex-column justify-content-stretch align-items-center features__picture">
-              <img class="features__image features__smaller" src="img/balanced@2x.png" alt="Balanced">
+              <source type="image/webp" srcset="img/balanced_desktop@1x.webp 1x, img/balanced_desktop@2x.webp 2x" media="(min-width: 768px)">
+              <source type="image/webp" srcset="img/balanced_mobile@1x.webp 1x, img/balanced_mobile@2x.webp 2x">
+              
+              <source srcset="img/balanced_desktop@1x.png 1x, img/balanced_desktop@2x.png 2x" media="(min-width: 768px)">
+              <img class="features__image features__smaller" src="img/balanced_mobile@1x.png" srcset="img/balanced_mobile@2x.png 2x" alt="Balanced">
             </picture>
           </div>
         </article>
         
         <article class="examples d-flex flex-wrap">
           <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-            <h3 class="ml-5 mr-5 text-center">Create with</h3>
+            <h3 class="ml-5 mr-5 text-center">Create!</h3>
             <p class="ml-sm-5 mr-sm-5 mb-0 lead text-center">Use simple icons to create clear and minimal design.</p>
           </div>
           <div id="carouselExampleIndicators" class="carousel slide col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block examples_image" src="img/Mug_PSD_MockUp_ 450x450_transparent.png" alt="Bag">
+                <picture>
+                  <source type="image/webp" srcset="img/mug_desktop@1x.webp 1x, img/mug_desktop@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/mug_mobile@1x.webp 1x, img/mug_mobile@2x.webp 2x">
+                  
+                  <source srcset="img/mug_desktop@1x.png 1x, img/mug_desktop@2x.png 2x" media="(min-width: 768px)">
+                  <img class="d-block examples_image" src="img/mug_mobile@1x.png" srcset="img/mug_mobile@2x.png 2x" alt="Mug">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block examples_image" src="img/Small_Canvas_Tote_Bag_MockUp_450х450.png" alt="Labels">
+                <picture>
+                  <source type="image/webp" srcset="img/label_desktop@1x.webp 1x, img/label_desktop@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/label_mobile@1x.webp 1x, img/label_mobile@2x.webp 2x">
+                  
+                  <source srcset="img/label_desktop@1x.png 1x, img/label_desktop@2x.png 2x" media="(min-width: 768px)">
+                  <img class="d-block examples_image" src="img/label_mobile@1x.png" srcset="img/label_mobile@2x.png 2x" alt="Labels">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block examples_image" src="img/Label_Tag _MockUp_2_450x450_transparent.png" alt="Mug">
+                <picture>
+                  <source type="image/webp" srcset="img/bag_desktop@1x.webp 1x, img/bag_desktop@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/bag_mobile@1x.webp 1x, img/bag_mobile@2x.webp 2x">
+                  
+                  <source srcset="img/bag_desktop@1x.jpg 1x, img/bag_desktop@2x.jpg 2x" media="(min-width: 768px)">
+                  <img class="d-block examples_image" src="img/bag_mobile@1x.jpg" srcset="img/bag_mobile@2x.jpg 2x" alt="Bag">
+                </picture>
               </div>
             </div>
           </div>
-          
         </article>
         
         <a class="position-relative btn btn-primary align-self-center mb-5" href="all_icons.html" role="button">View all icons</a>
         
-        <article class="visualise d-flex flex-wrap mb-5">
+        <article class="visualise d-flex flex-wrap mt-5 mb-5">
           <div class="col-sm-12 col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center">
             <h3 class="ml-5 mr-5 text-center">Visualize your methafors</h3>
             <p class="ml-sm-5 mr-sm-5 lead text-center">Make them stronger and easier to understand.</p>
@@ -148,13 +174,31 @@
           <div id="carouselExample" class="carousel slide col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block visualise_image ml-auto mr-auto border rounded" src="img/card_01.png" alt="Card image 1">
+                <picture>
+                  <source type="image/webp" srcset="img/card_1_desktop@1x.webp 1x, img/card_1_desktop@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/card_1_mobile@1x.webp 1x, img/card_1_mobile@2x.webp 2x">
+                  
+                  <source srcset="img/card_1_desktop@1x.png 1x, img/card_1_desktop@2x.png 2x" media="(min-width: 768px)">
+                  <img class="d-block visualise_image ml-auto mr-auto border rounded" src="img/card_1_mobile@1x.png" srcset="img/card_1_mobile@2x.png 2x" alt="Card 1">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block visualise_image ml-auto mr-auto border rounded" src="img/card_02.png" alt="Card image 2">
+                <picture>
+                  <source type="image/webp" srcset="img/card_2_desktop@1x.webp 1x, img/card_2_desktop@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/card_2_mobile@1x.webp 1x, img/card_2_mobile@2x.webp 2x">
+                  
+                  <source srcset="img/card_2_desktop@1x.png 1x, img/card_2_desktop@2x.png 2x" media="(min-width: 768px)">
+                  <img class="d-block visualise_image ml-auto mr-auto border rounded" src="img/card_2_mobile@1x.png" srcset="img/card_2_mobile@2x.png 2x" alt="Card 2">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block visualise_image ml-auto mr-auto border rounded" src="img/card_03.png" alt="Card image 3">
+                <picture>
+                  <source type="image/webp" srcset="img/card_3_desktop@1x.webp 1x, img/card_3_desktop@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/card_3_mobile@1x.webp 1x, img/card_3_mobile@2x.webp 2x">
+                  
+                  <source srcset="img/card_3_desktop@1x.png 1x, img/card_3_desktop@2x.png 2x" media="(min-width: 768px)">
+                  <img class="d-block visualise_image ml-auto mr-auto border rounded" src="img/card_3_mobile@1x.png" srcset="img/card_3_mobile@2x.png 2x" alt="Card 3">
+                </picture>
               </div>
             </div>
           </div>
@@ -169,10 +213,22 @@
           <div id="carouselExampleSlidesOnly" class="carousel slide col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block examples_image" src="img/samsung_s8_mockup_450px.png" srcset="img/samsung_s8_mockup_450px.png 2x" alt="Phone_mockup">
+                <picture>
+                  <source type="image/webp" srcset="img/smartphone_desktop@1x.webp 1x, img/smartphone_desktop@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/smartphone_mobile@1x.webp 1x, img/smartphone_mobile@2x.webp 2x">
+                  
+                  <source srcset="img/smartphone_desktop@1x.jpg 1x, img/smartphone_desktop@2x.jpg 2x" media="(min-width: 768px)">
+                  <img class="d-block examples_image" src="img/smartphone_mobile@1x.jpg" srcset="img/smartphone_mobile@2x.jpg 2x" alt="Phone_mockup">
+                </picture>
               </div>
               <div class="carousel-item">
-                <img class="d-block examples_image" src="img/menu_transparent.png" alt="menu">
+                <picture>
+                  <source type="image/webp" srcset="img/menu_desktop@1x.webp 1x, img/menu_desktop@2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/menu_mobile@1x.webp 1x, img/menu_mobile@2x.webp 2x">
+                  
+                  <source srcset="img/menu_desktop@1x.jpg 1x, img/menu_desktop@2x.jpg 2x" media="(min-width: 768px)">
+                  <img class="d-block examples_image" src="img/menu_mobile@1x.jpg" srcset="img/menu_mobile@2x.jpg 2x" alt="Menu">
+                </picture>
               </div>
             </div>
           </div>
@@ -205,13 +261,6 @@
         </a>
       </div>
     </footer>
-    
-    
-    
-    
-    
-    
-    
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
