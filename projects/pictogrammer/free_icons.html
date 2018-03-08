@@ -29,7 +29,7 @@
     
     <!-- SVG-sprite -->
     <svg style="display: none">
-      <svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-dribbble" viewbox="0 0 384 384"><path d="M192 360c-92.6 0-168-75.4-168-168S99.4 24 192 24s168 75.4 168 168-75.4 168-168 168zm0-320c-83.8 0-152 68.2-152 152s68.2 152 152 152 152-68.2 152-152S275.8 40 192 40z"></path><path d="M255.7 335.3C251.4 205 197.6 95 118.7 55.1l7.2-14.3c84.1 42.5 141.3 157.9 145.8 294z"></path><path d="M72 192a368.6 368.6 0 0 1-40.6-2.2l1.8-15.9A350.2 350.2 0 0 0 72 176c93.8 0 179.8-37 230.1-98.9l12.4 10.1C261.2 152.8 170.6 192 72 192zm31.7 132.6l-13.8-8C135.7 237.4 205 192 280 192a185.9 185.9 0 0 1 73.6 15.3l-6.3 14.7a170.1 170.1 0 0 0-67.3-14c-69.2 0-133.4 42.5-176.3 116.6z"></path></symbol></svg>
+      <svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-dribbble" viewbox="0 0 384 384"><path d="M192 360c-92.6 0-168-75.4-168-168S99.4 24 192 24s168 75.4 168 168-75.4 168-168 168zm0-320c-83.8 0-152 68.2-152 152s68.2 152 152 152 152-68.2 152-152S275.8 40 192 40z"></path><path d="M255.7 335.3C251.4 205 197.6 95 118.7 55.1l7.2-14.3c84.1 42.5 141.3 157.9 145.8 294z"></path><path d="M72 192a368.6 368.6 0 0 1-40.6-2.2l1.8-15.9A350.2 350.2 0 0 0 72 176c93.8 0 179.8-37 230.1-98.9l12.4 10.1C261.2 152.8 170.6 192 72 192zm31.7 132.6l-13.8-8C135.7 237.4 205 192 280 192a185.9 185.9 0 0 1 73.6 15.3l-6.3 14.7a170.1 170.1 0 0 0-67.3-14c-69.2 0-133.4 42.5-176.3 116.6z"></path></symbol><symbol id="icon-shopping-cart" viewbox="0 0 384 384"><path d="M312 376c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm0-64c-13.2 0-24 10.8-24 24s10.8 24 24 24 24-10.8 24-24-10.8-24-24-24zm-192 64c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm0-64c-13.2 0-24 10.8-24 24s10.8 24 24 24 24-10.8 24-24-10.8-24-24-24z"></path><path d="M98.1 308.4L55.1 24H0V8h68.9l45 298z"></path><path d="M332.2 272H99.5v-16h219.8l32.8-152h-278V88h297.8zM152 328h128v16H152z"></path></symbol><symbol id="icon-visible" viewbox="0 0 384 384"><path d="M192 272c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80zm0-144c-35.3 0-64 28.7-64 64s28.7 64 64 64 64-28.7 64-64-28.7-64-64-64z"></path><path d="M192 312c-73.3 0-140.8-42.2-185.1-115.9L4.5 192l2.5-4.1C51.2 114.2 118.7 72 192 72s140.8 42.2 185.1 115.9l2.5 4.1-2.5 4.1C332.8 269.8 265.3 312 192 312zM23.2 192C64.5 258.2 125.8 296 192 296s127.5-37.8 168.8-104C319.5 125.8 258.2 88 192 88S64.5 125.8 23.2 192z"></path></symbol></svg>
     </svg>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -58,13 +58,35 @@
     
     <header class="header header_small header_purchase d-flex flex-column justify-content-center align-items-center text-center">
       <div class="container">
-        <h1 class="header_title display-4 pb-4 pb-sm-5">Free icons</h1>
+        <h1 class="header_title display-4 pb-4 pb-sm-5">Free icon pack</h1>
       </div><!-- /.container -->
     </header><!-- /.header -->
       
     <main class="free-icons__main main d-flex flex-column align-items-center">
       
-      <section class="container d-flex justify-content-center align-items-center flex-column mt-5 mb-5">
+      <section class="free container d-flex justify-content-center align-items-center flex-column mt-5 mb-5">
+        <!-- <h2>Free icon pack</h2> -->
+        <p class="lead mb-5">20 Social Media Icons</p>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <picture class="mb-5">
+            <img class="free-icons__image" src="img/free_icons.png" alt="Free icons set">
+          </picture>
+          
+          <form class="col-8 d-flex flex-column align-items-center">
+            <div class="free__group form-group align-self-start col-12 pl-0 pr-0">
+              <input type="email" class="free__input form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="free__checkbox form-check align-self-start mb-2">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" checked="">
+              <label class="form-check-label" for="exampleCheck1">I want to recieve letters about new icons. Not often than once a month.</label>
+            </div>
+            <button type="submit" class="btn btn-primary col-6">Download</button>
+          </form>
+          
+        </div>
+      </section>
+      
+      <!-- <section class="container d-flex justify-content-center align-items-center flex-column mt-5 mb-5">
         <div class="d-flex flex-column justify-content-center align-items-center">
           <picture class="mb-5">
             <img class="free-icons__image" src="img/free_icons.png" alt="Free icons set">
@@ -78,7 +100,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     
     <footer class="footer d-flex justify-content-center align-items-center">

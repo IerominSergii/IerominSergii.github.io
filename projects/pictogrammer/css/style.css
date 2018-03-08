@@ -58,12 +58,37 @@ body {
   right: 0;
   left: auto; }
 
-.set__theme {
+.set {
+  position: relative; }
+
+.set__topic {
   font-size: 24px; }
 
 .set__image {
   width: 100%;
   height: auto; }
+
+.set__image:hover {
+  opacity: 0.6; }
+
+.set__preview-block {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px; }
+
+.set__btn-buy {
+  width: 90px;
+  fill: #ffffff;
+  background-color: #007bff; }
 
 .set__mask {
   -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(17%, transparent), color-stop(60%, black));
@@ -72,12 +97,33 @@ body {
           mask-image: linear-gradient(to top, transparent 17%, black 60%); }
 
 @media (min-width: 576px) {
-  .set__theme {
+  .set__topic {
     font-size: 28px; } }
 
 @media (min-width: 768px) {
-  .set__theme {
-    font-size: 30px; } }
+  .set__topic {
+    font-size: 30px; }
+  .set__preview-block {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    display: none;
+    width: 160px;
+    margin-left: -80px;
+    margin-top: -30px; }
+  .set:hover .set__preview-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .set__btn-buy {
+    width: 70px;
+    height: auto; } }
 
 .card {
   background-color: #ffffff; }
@@ -100,11 +146,8 @@ body {
   .features__picture {
     width: 90%;
     height: auto; }
-  .features__image {
-    width: 70%;
-    height: auto; }
   .features__smaller {
-    width: 70%; } }
+    width: 90%; } }
 
 @media (min-width: 768px) {
   .features__article {
@@ -149,3 +192,30 @@ body {
 .top-nav__logo-image {
   width: 40px;
   height: 40px; }
+
+.free__legend {
+  font-size: 12px;
+  line-height: 25px; }
+
+.free__group {
+  font-size: 14px;
+  line-height: 25px; }
+
+.free__checkbox {
+  font-size: 10px; }
+
+.free__input::-webkit-input-placeholder {
+  font-size: 12px; }
+
+.free__input:-ms-input-placeholder {
+  font-size: 12px; }
+
+.free__input::-ms-input-placeholder {
+  font-size: 12px; }
+
+.free__input::placeholder {
+  font-size: 12px; }
+
+@media (min-width: 768px) {
+  .set-purchase__theme {
+    display: none; } }
